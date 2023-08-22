@@ -5,7 +5,6 @@ using automapper_example.ValueObjects;
 using automapper_example.ViewModels;
 
 var config = new MapperConfiguration(cfg => {
-    cfg.CreateMap<Employee, EmployeeViewModel>();
     cfg.AddProfile<EmployeeProfile>();
 });
 var mapper = new Mapper(config);
