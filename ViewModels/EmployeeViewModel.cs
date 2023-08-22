@@ -7,6 +7,10 @@
         public string LastName { get; private set; }
         public string DepartmentName { get; private set; }
 
+        protected EmployeeViewModel()
+        {
+        }
+
         public EmployeeViewModel(Guid id, string firstName, string lastName, string departmentName)
         {
             Id = id;
