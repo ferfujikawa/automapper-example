@@ -12,7 +12,7 @@ Install-Package AutoMapper.Extensions.Microsoft.DependencyInjection
 
 Na inicialização, faça a chamada a um *Extension Method* do AutoMapper para realizar o mapeamento de todos os Profiles (que herdam de AutoMapper.Profile) existentes em seu Projeto:
 
-```dotnet
+```c#
 //services is type of Microsoft.Extensions.DependencyInjection.IServiceCollection 
 services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 ```
@@ -21,7 +21,7 @@ services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 Existe um *Extension Method (ProjectTo<T>)* para utilização do AutoMapper em consultas com IQueryable:
 
-```dotnet
+```c#
 //Adicione a dependência de um *AutoMapper.IConfigurationProvider* na classe
 public NomeDaClasse(IConfigurationProvider configurationProvider) { ... }
 
